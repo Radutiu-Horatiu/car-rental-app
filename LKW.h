@@ -14,7 +14,7 @@ private:
 
 public:
 	LKW();
-	LKW(double Gesamtgewicht, string Bezeichnung, int id, string Marke, string Modell) :Auto(id, Marke, Modell) {};
+	LKW(double Gesamtgewicht, string Bezeichnung, int id, string Marke, string Modell);
 	void Load();
 	void Unload();
 

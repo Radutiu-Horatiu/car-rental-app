@@ -153,6 +153,7 @@
     <ClCompile Include="PKW.cpp" />
     <ClCompile Include="Rental.cpp" />
     <ClCompile Include="Seminar3OOP.cpp" />
+    <ClCompile Include="Tests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Auto.h" />
@@ -160,6 +161,7 @@
     <ClInclude Include="LKW.h" />
     <ClInclude Include="PKW.h" />
     <ClInclude Include="Rental.h" />
+    <ClInclude Include="Tests.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -11,7 +11,7 @@ LKW::LKW()
 	Bezeichnung = "?";
 }
 
-LKW::LKW(double Gesamtgewicht, string Bezeichnung, int id, string Marke, string Modell) :Auto(id, Marke, Modell)
+LKW::LKW(double Gesamtgewicht, string Bezeichnung, int id, string Marke, string Modell)
 {
 	this->Gesamtgewicht = Gesamtgewicht;
 	this->Bezeichnung = Bezeichnung;
