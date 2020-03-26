@@ -9,15 +9,16 @@ class Rental
 {
 private:
 
-	vector<Kunde> Kunden;
-	vector<Auto> Autos;
+	
 
 public:
+
+	vector<Kunde> Kunden;
+	vector<Auto> Autos;
 
 	void addClient(Kunde c);
 	void deleteClient(Kunde c);
 	void updateClient(Kunde c, string NAME);
 	void addAuto(Auto a);
 	void deleteAuto(Auto a);
-
 };

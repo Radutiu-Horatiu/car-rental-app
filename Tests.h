@@ -1,2 +1,3 @@
 #pragma once
-void TestAll();
+void Tests();
+void TestActions();

@@ -14,6 +14,6 @@ private:
 public:
 
 	PKW();
-	PKW(string Sonderausstattungen, int id, string Marke, string Modell) :Auto(id, Marke, Modell) {};
+	PKW(string Sonderausstattungen, int ID, string MARKE, string MODELL);
 
 };

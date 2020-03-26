@@ -9,12 +9,13 @@ class LKW : public Auto
 {
 private:
 
+public:
+
 	int Gesamtgewicht;
 	string Bezeichnung;
 
-public:
 	LKW();
-	LKW(double Gesamtgewicht, string Bezeichnung, int id, string Marke, string Modell);
+	LKW(int Gesamtgewicht, string Bezeichnung, int ID, string MARKE, string MODELL);
 	void Load();
 	void Unload();
 

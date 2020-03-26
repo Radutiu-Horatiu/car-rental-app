@@ -2,7 +2,8 @@
 #include "Tests.h"
 int main()
 {
-	TestAll();
+	Tests();
+	TestActions();
 
 	std::cout << "\nTests Over";
 }
