@@ -42,8 +42,7 @@ void Tests()
 	cout << "\nTest Update\n";
 
 	r.updateClient(k1, "krisztian");
-	//cout << k1.get_name();
-	//assert(k1.get_name() == "krisztian");
+	assert(k1.get_name() == "krisztian");
 }
 
 void TestActions()

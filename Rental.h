@@ -18,7 +18,7 @@ public:
 
 	void addClient(Kunde c);
 	void deleteClient(Kunde c);
-	void updateClient(Kunde c, string NAME);
+	void updateClient(Kunde& c, string NAME);
 	void addAuto(Auto a);
 	void deleteAuto(Auto a);
 };

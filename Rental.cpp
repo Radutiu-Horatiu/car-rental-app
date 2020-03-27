@@ -59,13 +59,14 @@ void Rental::deleteAuto(Auto a) {
 	}
 }
 
-void Rental::updateClient(Kunde c, string NAME) {
+void Rental::updateClient(Kunde& c, string NAME) {
 	if (Kunden.size() == 0) {
 		return;
 	}
 	for (int i = 0; i < Kunden.size(); i++) {
 		if (Kunden[i].get_id() == c.get_id()) {
 			Kunden[i].set_name(NAME);
+			c = Kunden[i];
 		}
 	}
 }
