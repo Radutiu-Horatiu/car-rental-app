@@ -7,12 +7,10 @@ using namespace std;
 class Auto
 {
 private:
-
-public:
-
 	int id;
 	string Marke;
 	string Modell;
+public:
 
 	Auto();
 	Auto(int ID, string MARKE, string MODELL);

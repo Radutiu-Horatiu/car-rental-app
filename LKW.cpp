@@ -11,13 +11,10 @@ LKW::LKW()
 	Bezeichnung = "?";
 }
 
-LKW::LKW(int Gesamtgewicht, string Bezeichnung, int ID, string MARKE, string MODELL)
+LKW::LKW(int Gesamtgewicht, string Bezeichnung, int ID, string MARKE, string MODELL):Auto(ID, MARKE, MODELL)
 {
 	this->Gesamtgewicht = Gesamtgewicht;
 	this->Bezeichnung = Bezeichnung;
-	id = ID;
-	Marke = MARKE;
-	Modell = MODELL;
 }
 
 void LKW::Load()

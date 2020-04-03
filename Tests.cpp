@@ -70,5 +70,5 @@ void TestActions()
 	l1.Unload();
 	l1.Load();
 
-	assert(l1.Gesamtgewicht == 1002);
+	assert(l1.get_Gesamtgewicht() == 1002);
 }

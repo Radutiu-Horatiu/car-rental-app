@@ -8,14 +8,13 @@ using namespace std;
 class LKW : public Auto
 {
 private:
-
-public:
-
 	int Gesamtgewicht;
 	string Bezeichnung;
+public:
 
 	LKW();
 	LKW(int Gesamtgewicht, string Bezeichnung, int ID, string MARKE, string MODELL);
+	int get_Gesamtgewicht() { return Gesamtgewicht; }
 	void Load();
 	void Unload();
 
