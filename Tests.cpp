@@ -35,9 +35,12 @@ void Main()
 	r.addClient(k2);
 	r.addClient(k3);
 
+	AutoInRepo repo(r);
+
 	AutoController controller(r);
 
 	Console c(controller);
+
 	c.choose_option();
 }
 

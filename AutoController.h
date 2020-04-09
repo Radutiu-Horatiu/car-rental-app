@@ -10,13 +10,11 @@ class AutoController: public AutoInRepo
 {
 private:
 
-	AutoInRepo repo;
 
 public:
-
-	Rental rental;
+	AutoInRepo repo;
 	AutoController();
-	AutoController(Rental r);
+	AutoController(AutoInRepo r);
 	~AutoController();
 
 	Auto findAutoById(int id);

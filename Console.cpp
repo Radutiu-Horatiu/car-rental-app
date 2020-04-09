@@ -56,8 +56,8 @@ void Console::choose_option()
 	{
 		cout << "List of Autos:\n";
 
-		for (int i = 0; i < ac.rental.Autos.size(); i++)
-			ac.rental.Autos[i].show_auto();
+		for (int i = 0; i < ac.repo.rental.Autos.size(); i++)
+			ac.repo.rental.Autos[i].show_auto();
 	}
 	if (option == '3')
 	{
@@ -73,14 +73,14 @@ void Console::choose_option()
 		cin >> id_car;
 
 		Auto a;
-		for (int i = 0; i < ac.rental.Autos.size(); i++)
-			if (id_car == ac.rental.Autos[i].get_id())
-				a = ac.rental.Autos[i];
+		for (int i = 0; i < ac.repo.rental.Autos.size(); i++)
+			if (id_car == ac.repo.rental.Autos[i].get_id())
+				a = ac.repo.rental.Autos[i];
 
 		Kunde k;
-		for (int i = 0; i < ac.rental.Kunden.size(); i++)
-			if (id_car == ac.rental.Kunden[i].get_id())
-				k = ac.rental.Kunden[i];
+		for (int i = 0; i < ac.repo.rental.Kunden.size(); i++)
+			if (id_car == ac.repo.rental.Kunden[i].get_id())
+				k = ac.repo.rental.Kunden[i];
 
 		ac.saveAuto(a, k);
 	}
@@ -98,7 +98,7 @@ void Console::choose_option()
 	}
 	if (option == '6')
 	{
-		ac.rental.show_orders();
+		ac.repo.rental.show_orders();
 	}
 
 	choose_option();
