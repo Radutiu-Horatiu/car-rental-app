@@ -17,12 +17,12 @@ void Console::show_clients_and_cars()
 {
 	cout << "Autos:\n";
 
-	for (int i = 0; i < ac.rental.Autos.size(); i++)
-		ac.rental.Autos[i].show_auto();
+	for (int i = 0; i < ac.repo.rental.Autos.size(); i++)
+		ac.repo.rental.Autos[i].show_auto();
 
 	cout << "\nClients:\n";
-	for (int i = 0; i < ac.rental.Kunden.size(); i++)
-		ac.rental.Kunden[i].show_clients();
+	for (int i = 0; i < ac.repo.rental.Kunden.size(); i++)
+		ac.repo.rental.Kunden[i].show_clients();
 	
 	cout << endl;
 }
@@ -74,19 +74,49 @@ void Console::choose_option()
 
 		Auto a;
 		for (int i = 0; i < ac.repo.rental.Autos.size(); i++)
-			if (id == ac.repo.rental.Autos[i].get_id())
+			if (id_car == ac.repo.rental.Autos[i].get_id())
 				a = ac.repo.rental.Autos[i];
 
 		Kunde k;
 		for (int i = 0; i < ac.repo.rental.Kunden.size(); i++)
-			if (id_car == ac.repo.rental.Kunden[i].get_id())
+			if (id == ac.repo.rental.Kunden[i].get_id())
 				k = ac.repo.rental.Kunden[i];
 
 		ac.saveAuto(a, k);
 	}
 	if (option == '4')
 	{
+		show_clients_and_cars();
+		ac.repo.rental.show_orders();
 
+		int id;
+		int id_car1;
+		int id_car2;
+
+		cout << "Give client ID: ";
+		cin >> id;
+
+		cout << "Give client car ID: ";
+		cin >> id_car1;
+
+		cout << "Give update car ID: ";
+		cin >> id_car2;
+
+		Auto a1;
+		for (int i = 0; i < ac.repo.rental.Autos.size(); i++)
+			if (id_car1 == ac.repo.rental.Autos[i].get_id())
+				a1 = ac.repo.rental.Autos[i];
+		Auto a2;
+		for (int i = 0; i < ac.repo.rental.Autos.size(); i++)
+			if (id_car2 == ac.repo.rental.Autos[i].get_id())
+				a2 = ac.repo.rental.Autos[i];
+
+		Kunde k;
+		for (int i = 0; i < ac.repo.rental.Kunden.size(); i++)
+			if (id == ac.repo.rental.Kunden[i].get_id())
+				k = ac.repo.rental.Kunden[i];
+
+		ac.updateAuto(a1, a2, k);
 	}
 	if (option == '5')
 	{

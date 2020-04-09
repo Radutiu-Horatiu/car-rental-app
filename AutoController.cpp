@@ -67,7 +67,7 @@ Kunde AutoController::updateAuto(Auto car1, Auto car2, Kunde& client)
 	if (gasit_client != -1 and gasit_masina != -1)
 	{
 		for (int i = 0; i < repo.rental.Kunden[gasit_client].comenzi.size(); i++)
-			if (rental.Kunden[gasit_client].comenzi[i].get_id() == car1.get_id())
+			if (repo.rental.Kunden[gasit_client].comenzi[i].get_id() == car1.get_id())
 			{
 				repo.rental.Kunden[gasit_client].comenzi.erase(repo.rental.Kunden[gasit_client].comenzi.begin() + i);
 				repo.rental.Kunden[gasit_client].comenzi.push_back(car2);
