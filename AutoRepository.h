@@ -7,21 +7,22 @@ class AutoInRepo: public ​CrudRepository <Auto>
 {
 private:
 
-	vector <Auto> AutoInMemoryRepo;
+	vector <Auto> vehicles;
 
 public:
+
 	AutoInRepo();
 
 	~AutoInRepo();
 
 	Auto findOne(int id);
 
-	Auto findAll();
+	vector <Auto> findAll();
 
-	Auto save();
+	Auto save(Auto new_car);
 
-	Auto del();
+	Auto del(int id);
 
-	Auto update();
+	Auto update(Auto& car, string marke);
 
 };
