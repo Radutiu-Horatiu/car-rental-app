@@ -74,7 +74,7 @@ void Console::choose_option()
 
 		Auto a;
 		for (int i = 0; i < ac.repo.rental.Autos.size(); i++)
-			if (id_car == ac.repo.rental.Autos[i].get_id())
+			if (id == ac.repo.rental.Autos[i].get_id())
 				a = ac.repo.rental.Autos[i];
 
 		Kunde k;
@@ -90,7 +90,26 @@ void Console::choose_option()
 	}
 	if (option == '5')
 	{
+		int id;
+		int id_car;
 
+		cout << "Give client ID: ";
+		cin >> id;
+
+		cout << "Give car ID: ";
+		cin >> id_car;
+	
+		Auto a;
+		for (int i = 0; i < ac.repo.rental.Autos.size(); i++)
+			if (id == ac.repo.rental.Autos[i].get_id())
+				a = ac.repo.rental.Autos[i];
+
+		Kunde k;
+		for (int i = 0; i < ac.repo.rental.Kunden.size(); i++)
+			if (id_car == ac.repo.rental.Kunden[i].get_id())
+				k = ac.repo.rental.Kunden[i];
+
+		ac.deleteAuto(a, k);
 	}
 	if (option == '0')
 	{
