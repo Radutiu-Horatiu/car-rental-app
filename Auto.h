@@ -23,6 +23,6 @@ public:
 	void set_Marke(string MARKE);
 	void set_Modell(string MODELL);
 
-	void show_auto();
+	void show_auto(); 
 };
 
