@@ -22,5 +22,6 @@ public:
 	void set_id(int ID);
 	void set_Marke(string MARKE);
 	void set_Modell(string MODELL);
+
 };
 

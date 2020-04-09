@@ -1,4 +1,4 @@
-#include "Tests.h"
+﻿#include "Tests.h"
 #include "Auto.h"
 #include "PKW.h"
 #include "LKW.h"
@@ -6,7 +6,49 @@
 #include "Rental.h"
 #include <iostream>
 #include <assert.h>
+#include "AutoRepository.h"
+#include "CrudRepo.h"
+#include <vector>
 using namespace std;
+
+void TestRepo()
+{
+	cout << "\nTest Repo\n";
+	CrudRepository<Auto>* p = new AutoInRepo;
+	vector <Auto> masini;
+	vector <Auto> returnare;
+
+	Auto a1(1, "a1", "a1");
+	Auto a2(2, "a2", "a2");
+	Auto a3(3, "a3", "a3");
+	Auto a4(4, "a4", "a4");
+
+	returnare.push_back(p->save(a1));
+	returnare.push_back(p->save(a2));
+	returnare.push_back(p->save(a3));
+	returnare.push_back(p->save(a4));
+
+	masini = p->findAll();
+
+	vector<Auto> aux;
+	aux = p->findAll();
+	for (int i = 0; i < 4; i++)
+	{
+		//cout << aux[i].get_Marke() << '\n';
+	}
+
+	returnare.push_back(p->update(a1,"marca_noua"));
+
+	returnare.push_back(p->del(2));
+	aux = p->findAll();
+
+	cout << '\n';
+	for (int i = 0; i < aux.size(); i++)
+	{
+		//cout << aux[i].get_Marke() << '\n';
+	}
+}
+
 void Tests()
 {
 	cout << "\nTest Add\n";

@@ -4,14 +4,6 @@
 
 using namespace std;
 
-AutoInRepo::AutoInRepo()
-{
-}
-
-AutoInRepo::~AutoInRepo()
-{
-}
-
 Auto AutoInRepo::findOne(int id)
 {
 	Auto null_auto;
@@ -55,7 +47,7 @@ Auto AutoInRepo::del(int id)
 	return null_auto;
 }
 
-Auto AutoInRepo::update(Auto& car, string marke)
+Auto AutoInRepo::update(Auto car, string marke)
 {	
 	Auto null_auto;
 
@@ -69,3 +61,4 @@ Auto AutoInRepo::update(Auto& car, string marke)
 
 	return null_auto;
 }
+

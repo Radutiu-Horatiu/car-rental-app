@@ -5,5 +5,7 @@ int main()
 	Tests();
 	TestActions();
 
+	TestRepo();
+
 	std::cout << "\nTests Over";
 }

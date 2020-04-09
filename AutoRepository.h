@@ -3,17 +3,13 @@
 #include "CrudRepo.h"
 using namespace std;
 
-class AutoInRepo: public ​CrudRepository <Auto>
+class AutoInRepo: public CrudRepository<Auto>
 {
 private:
 
 	vector <Auto> vehicles;
 
 public:
-
-	AutoInRepo();
-
-	~AutoInRepo();
 
 	Auto findOne(int id);
 
@@ -23,6 +19,6 @@ public:
 
 	Auto del(int id);
 
-	Auto update(Auto& car, string marke);
+	Auto update(Auto car, string marke);
 
 };
