@@ -2,6 +2,13 @@
 #include <string>
 #include "Auto.h"
 
+using namespace std;
+
+void Auto::show_auto()
+{
+	cout << "ID: " << id << " Marke: " << Marke << " Modell: " << Modell << endl;
+}
+
 Auto::Auto()
 {
 

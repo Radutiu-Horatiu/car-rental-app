@@ -4,6 +4,11 @@ using namespace std;
 AutoController::AutoController(Rental r)
 {
 	rental = r;
+	
+}
+
+AutoController::AutoController()
+{
 }
 
 AutoController::~AutoController()

@@ -5,6 +5,20 @@
 
 using namespace std;
 
+void Rental::show_orders()
+{
+	cout << "Orders:\n";
+
+	for (int i = 0; i < Kunden.size(); i++)
+	{
+		cout << "ID: " << Kunden[i].get_id() << " Name: " << Kunden[i].get_name() << " List:\n";
+		for (int j = 0; j < Kunden[i].comenzi.size(); j++)
+			Kunden[i].comenzi[j].show_auto();
+		cout << endl;
+	}
+
+}
+
 void Rental::addClient(Kunde c) {
 	if (Kunden.size() == 0) {
 		Kunden.push_back(c);

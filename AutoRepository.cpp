@@ -18,9 +18,9 @@ Auto AutoInRepo::findOne(int id)
 {
 	Auto null_auto;
 
-	for (int i = 0; i < vehicles.size(); i++)
-		if (vehicles[i].get_id() == id)
-			return vehicles[i];
+	for (int i = 0; i < rental.Autos.size(); i++)
+		if (rental.Autos[i].get_id() == id)
+			return rental.Autos[i];
 
 	return null_auto;
 
@@ -28,18 +28,18 @@ Auto AutoInRepo::findOne(int id)
 
 vector <Auto> AutoInRepo::findAll()
 {
-	return vehicles;
+	return rental.Autos;
 }
 
 Auto AutoInRepo::save(Auto new_car)
 {
 	Auto null_auto;
 
-	for (int i = 0; i < vehicles.size(); i++)
-		if (vehicles[i].get_id() == new_car.get_id())
-			return vehicles[i];
+	for (int i = 0; i < rental.Autos.size(); i++)
+		if (rental.Autos[i].get_id() == new_car.get_id())
+			return rental.Autos[i];
 
-	vehicles.push_back(new_car);
+	rental.Autos.push_back(new_car);
 	return null_auto;
 }
 
@@ -47,11 +47,11 @@ Auto AutoInRepo::del(int id)
 {
 	Auto null_auto;
 
-	for (int i = 0; i < vehicles.size(); i++)
-		if (vehicles[i].get_id() == id)
+	for (int i = 0; i < rental.Autos.size(); i++)
+		if (rental.Autos[i].get_id() == id)
 		{
-			vehicles.erase(vehicles.begin() + i);
-			return vehicles[i];
+			rental.Autos.erase(rental.Autos.begin() + i);
+			return rental.Autos[i];
 		}
 
 	return null_auto;
@@ -61,12 +61,12 @@ Auto AutoInRepo::update(Auto car, string marke)
 {	
 	Auto null_auto;
 
-	for (int i = 0; i < vehicles.size(); i++)
-		if (vehicles[i].get_id() == car.get_id())
+	for (int i = 0; i < rental.Autos.size(); i++)
+		if (rental.Autos[i].get_id() == car.get_id())
 		{
-			vehicles[i].set_Marke(marke);
-			car = vehicles[i];
-			return vehicles[i];
+			rental.Autos[i].set_Marke(marke);
+			car = rental.Autos[i];
+			return rental.Autos[i];
 		}
 
 	return null_auto;

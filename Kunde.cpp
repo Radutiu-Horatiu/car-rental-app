@@ -4,6 +4,11 @@
 
 using namespace std;
 
+void Kunde::show_clients()
+{
+	cout << "ID: " << id << " Name: " << name << endl;
+}
+
 Kunde::Kunde()
 {
 	this->id = 0;

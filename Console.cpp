@@ -1,0 +1,105 @@
+#include "Console.h"
+#include <iostream>
+
+
+using namespace std;
+
+Console::Console(AutoController c)
+{
+	ac = c;
+}
+
+Console::~Console()
+{
+}
+
+void Console::show_clients_and_cars()
+{
+	cout << "Autos:\n";
+
+	for (int i = 0; i < ac.rental.Autos.size(); i++)
+		ac.rental.Autos[i].show_auto();
+
+	cout << "\nClients:\n";
+	for (int i = 0; i < ac.rental.Kunden.size(); i++)
+		ac.rental.Kunden[i].show_clients();
+	
+	cout << endl;
+}
+
+void Console::build_menu()
+{
+	cout << "\nOptions\n0 - Exit\n1 - Find Auto by ID\n2 - Find All\n3 - Save Auto to Client\n4 - Update Auto\n5 - Delete Auto\n6 - Show Orders\n";
+}
+
+void Console::choose_option()
+{
+	build_menu();
+	cout << "Choose option:\nYour option: ";
+	char option = '69';
+
+	cin >> option;
+
+	if (option == '1')
+	{
+		int id;
+		cout << "\nEnter Auto ID to be found: ";
+		cin >> id;
+
+		Auto a;
+
+		a = ac.findAutoById(id);
+
+		a.show_auto();
+	}
+	if (option == '2')
+	{
+		cout << "List of Autos:\n";
+
+		for (int i = 0; i < ac.rental.Autos.size(); i++)
+			ac.rental.Autos[i].show_auto();
+	}
+	if (option == '3')
+	{
+		show_clients_and_cars();
+
+		int id;
+		int id_car;
+
+		cout << "Give client ID: ";
+		cin >> id;
+
+		cout << "Give car ID: ";
+		cin >> id_car;
+
+		Auto a;
+		for (int i = 0; i < ac.rental.Autos.size(); i++)
+			if (id_car == ac.rental.Autos[i].get_id())
+				a = ac.rental.Autos[i];
+
+		Kunde k;
+		for (int i = 0; i < ac.rental.Kunden.size(); i++)
+			if (id_car == ac.rental.Kunden[i].get_id())
+				k = ac.rental.Kunden[i];
+
+		ac.saveAuto(a, k);
+	}
+	if (option == '4')
+	{
+
+	}
+	if (option == '5')
+	{
+
+	}
+	if (option == '0')
+	{
+		return;
+	}
+	if (option == '6')
+	{
+		ac.rental.show_orders();
+	}
+
+	choose_option();
+}

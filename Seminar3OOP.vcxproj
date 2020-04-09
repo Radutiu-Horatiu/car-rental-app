@@ -149,6 +149,7 @@
   <ItemGroup>
     <ClCompile Include="Auto.cpp" />
     <ClCompile Include="AutoController.cpp" />
+    <ClCompile Include="Console.cpp" />
     <ClCompile Include="Kunde.cpp" />
     <ClCompile Include="LKW.cpp" />
     <ClCompile Include="PKW.cpp" />
@@ -161,6 +162,7 @@
     <ClInclude Include="Auto.h" />
     <ClInclude Include="AutoController.h" />
     <ClInclude Include="AutoRepository.h" />
+    <ClInclude Include="Console.h" />
     <ClInclude Include="Kunde.h" />
     <ClInclude Include="LKW.h" />
     <ClInclude Include="PKW.h" />

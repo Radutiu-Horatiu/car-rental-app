@@ -11,8 +11,6 @@ public:
 
 	Rental rental;
 
-	vector <Auto> vehicles = rental.Autos;
-
 	AutoInRepo(); 
 
 	AutoInRepo(Rental r); //acces la vectorii din rental

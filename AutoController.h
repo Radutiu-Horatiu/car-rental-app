@@ -15,6 +15,7 @@ private:
 public:
 
 	Rental rental;
+	AutoController();
 	AutoController(Rental r);
 	~AutoController();
 

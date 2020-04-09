@@ -8,14 +8,43 @@
 #include <assert.h>
 #include "AutoRepository.h"
 #include "CrudRepo.h"
+#include "Console.h"
 #include <vector>
 #include "AutoController.h"
 using namespace std;
 
 void Main()
 {
-	cout << "Menu";
-	/*
+	cout << "\nMenu\n";
+
+	Rental r;
+
+	Kunde k1(1, "client1");
+	Kunde k2(2, "client2");
+	Kunde k3(3, "client3");
+
+	Auto a1(1, "bemveu", "seria3");
+	PKW p1("test", 2, "pekaveu69", "exemplu");
+	LKW l1(1000, "bezeichnung", 3, "elkaveu", "exemplu");
+
+	r.addAuto(a1);
+	r.addAuto(p1);
+	r.addAuto(l1);
+
+	r.addClient(k1);
+	r.addClient(k2);
+	r.addClient(k3);
+
+	AutoController controller(r);
+
+	Console c(controller);
+	c.choose_option();
+}
+
+void TestController()
+{
+	cout << "Test Controller\n";
+	
 	Rental r;
 
 	Kunde k1(1, "client1");
@@ -39,7 +68,7 @@ void Main()
 	controller.saveAuto(l1, k1);
 	//controller.updateAuto(a1, p1, k1);
 	controller.deleteAuto(a1, k1);
-	cout << endl  << controller.rental.Kunden[0].comenzi[0].get_Marke();*/
+	//cout << endl  << controller.rental.Kunden[0].comenzi[0].get_Marke();
 }
 
 void TestRepo()

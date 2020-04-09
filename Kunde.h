@@ -22,5 +22,7 @@ public:
 	string get_name();
 	void set_id(int ID);
 	void set_name(string NAME);
+
+	void show_clients();
 };
 
