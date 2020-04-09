@@ -152,15 +152,18 @@
     <ClCompile Include="LKW.cpp" />
     <ClCompile Include="PKW.cpp" />
     <ClCompile Include="Rental.cpp" />
+    <ClCompile Include="AutoRepository.cpp" />
     <ClCompile Include="Seminar3OOP.cpp" />
     <ClCompile Include="Tests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Auto.h" />
+    <ClInclude Include="AutoRepository.h" />
     <ClInclude Include="Kunde.h" />
     <ClInclude Include="LKW.h" />
     <ClInclude Include="PKW.h" />
     <ClInclude Include="Rental.h" />
+    <ClInclude Include="CrudRepo.h" />
     <ClInclude Include="Tests.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

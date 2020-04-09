@@ -36,6 +36,9 @@
     <ClCompile Include="Tests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AutoRepository.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Auto.h">
@@ -54,6 +57,12 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Tests.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoRepository.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CrudRepo.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
