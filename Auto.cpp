@@ -47,4 +47,3 @@ void Auto::set_Modell(string MODELL)
 {
 	this->Modell = MODELL;
 }
-

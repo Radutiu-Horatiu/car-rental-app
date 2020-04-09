@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
-
+#include "Auto.h"
+#include <vector>
 using namespace std;
 
 class Kunde
@@ -9,8 +10,11 @@ private:
 
 	int id;
 	string name;
+	
 
 public:
+
+	vector <Auto> comenzi;
 
 	Kunde();
 	Kunde(int id, string name);

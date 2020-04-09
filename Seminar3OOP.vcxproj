@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Auto.cpp" />
+    <ClCompile Include="AutoController.cpp" />
     <ClCompile Include="Kunde.cpp" />
     <ClCompile Include="LKW.cpp" />
     <ClCompile Include="PKW.cpp" />
@@ -158,6 +159,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Auto.h" />
+    <ClInclude Include="AutoController.h" />
     <ClInclude Include="AutoRepository.h" />
     <ClInclude Include="Kunde.h" />
     <ClInclude Include="LKW.h" />

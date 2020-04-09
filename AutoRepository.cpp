@@ -1,8 +1,18 @@
 #include "CrudRepo.h"
 #include "AutoRepository.h"
 #include <string>
-
+#include "Rental.h"
 using namespace std;
+
+AutoInRepo::AutoInRepo()
+{
+
+}
+
+AutoInRepo::AutoInRepo(Rental r)
+{
+	rental = r;
+}
 
 Auto AutoInRepo::findOne(int id)
 {

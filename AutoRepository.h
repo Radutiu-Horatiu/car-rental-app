@@ -1,15 +1,21 @@
 ﻿#pragma once
 #include <vector>
 #include "CrudRepo.h"
+#include "Rental.h"
+
 using namespace std;
 
 class AutoInRepo: public CrudRepository<Auto>
 {
-private:
-
-	vector <Auto> vehicles;
-
 public:
+
+	Rental rental;
+
+	vector <Auto> vehicles = rental.Autos;
+
+	AutoInRepo(); 
+
+	AutoInRepo(Rental r); //acces la vectorii din rental
 
 	Auto findOne(int id);
 

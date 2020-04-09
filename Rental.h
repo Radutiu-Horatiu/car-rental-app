@@ -7,10 +7,6 @@ using namespace std;
 
 class Rental
 {
-private:
-
-	
-
 public:
 
 	vector<Kunde> Kunden;

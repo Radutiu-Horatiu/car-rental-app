@@ -9,11 +9,42 @@
 #include "AutoRepository.h"
 #include "CrudRepo.h"
 #include <vector>
+#include "AutoController.h"
 using namespace std;
+
+void Main()
+{
+	cout << "Menu";
+	/*
+	Rental r;
+
+	Kunde k1(1, "client1");
+	Kunde k2(2, "client2");
+
+	Auto a1(1, "bemveu", "seria3");
+	PKW p1("test", 2, "pekaveu69", "exemplu");
+	LKW l1(1000, "bezeichnung", 3, "elkaveu", "exemplu");
+
+	r.addAuto(a1);
+	r.addAuto(p1);
+	r.addAuto(l1);
+
+	r.addClient(k1);
+	r.addClient(k2);
+
+	
+	AutoController controller(r);
+
+	controller.saveAuto(a1, k1);
+	controller.saveAuto(l1, k1);
+	//controller.updateAuto(a1, p1, k1);
+	controller.deleteAuto(a1, k1);
+	cout << endl  << controller.rental.Kunden[0].comenzi[0].get_Marke();*/
+}
 
 void TestRepo()
 {
-	cout << "\nTest Repo\n";
+	cout << "Test Repo\n";
 	CrudRepository<Auto>* p = new AutoInRepo;
 	vector <Auto> masini;
 	vector <Auto> returnare;
@@ -51,7 +82,7 @@ void TestRepo()
 
 void Tests()
 {
-	cout << "\nTest Add\n";
+	cout << "Test Add\n";
 
 	Rental r;
 
@@ -72,7 +103,7 @@ void Tests()
 	assert(r.Kunden.size() == 2);
 	assert(r.Autos.size() == 3);
 
-	cout << "\nTest Delete\n";
+	cout << "Test Delete\n";
 
 	r.deleteAuto(a1);
 	assert(r.Autos.size() == 2);
@@ -81,7 +112,7 @@ void Tests()
 	r.deleteAuto(l1);
 	assert(r.Autos.size() == 0);
 
-	cout << "\nTest Update\n";
+	cout << "Test Update\n";
 
 	r.updateClient(k1, "krisztian");
 	assert(k1.get_name() == "krisztian");
@@ -89,7 +120,7 @@ void Tests()
 
 void TestActions()
 {
-	cout << "\nTest Actions\n";
+	cout << "Test Actions\n";
 
 	Rental r;
 

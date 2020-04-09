@@ -4,8 +4,9 @@ int main()
 {
 	Tests();
 	TestActions();
-
 	TestRepo();
 
-	std::cout << "\nTests Over";
+	std::cout << "Tests Over\n";
+
+	Main();
 }

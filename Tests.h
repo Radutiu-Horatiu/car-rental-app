@@ -2,3 +2,4 @@
 void Tests();
 void TestActions();
 void TestRepo();
+void Main();
