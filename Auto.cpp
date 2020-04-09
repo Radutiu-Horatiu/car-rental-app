@@ -22,7 +22,7 @@ Auto::Auto(int ID, string MARKE, string MODELL)
 {
 	id = ID;
 	Marke = MARKE;
-	Modell = MODELL;
+	Modell = MODELL; 
 }
 
 int Auto::get_id()

@@ -13,7 +13,7 @@ public:
     virtual vector <E> findAll() = 0;
 
     virtual E save(E entity) = 0;
-
+     
     virtual E del(int id) = 0;
 
     virtual E update(E entity, string marke) = 0;

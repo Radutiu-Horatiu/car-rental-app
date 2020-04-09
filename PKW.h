@@ -16,4 +16,4 @@ public:
 	PKW();
 	PKW(string Sonderausstattungen, int ID, string MARKE, string MODELL);
 
-};
+}; 

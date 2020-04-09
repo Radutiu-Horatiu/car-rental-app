@@ -10,7 +10,7 @@ private:
 
 	AutoController ac;
 
-public:
+public: 
 	Console(AutoController c);
 	~Console();
 

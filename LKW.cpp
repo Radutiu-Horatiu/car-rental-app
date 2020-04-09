@@ -10,7 +10,7 @@ LKW::LKW()
 	Gesamtgewicht = 0;
 	Bezeichnung = "?";
 }
-
+ 
 LKW::LKW(int Gesamtgewicht, string Bezeichnung, int ID, string MARKE, string MODELL):Auto(ID, MARKE, MODELL)
 {
 	this->Gesamtgewicht = Gesamtgewicht;

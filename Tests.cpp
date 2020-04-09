@@ -19,7 +19,7 @@ void Main()
 
 	Rental r;
 
-	Kunde k1(1, "client1");
+	Kunde k1(1, "client1"); 
 	Kunde k2(2, "client2");
 	Kunde k3(3, "client3");
 
