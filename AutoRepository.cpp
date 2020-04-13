@@ -50,8 +50,9 @@ Auto AutoInRepo::del(int id)
 	for (int i = 0; i < rental.Autos.size(); i++)
 		if (rental.Autos[i].get_id() == id)
 		{
+			null_auto = rental.Autos[i];
 			rental.Autos.erase(rental.Autos.begin() + i);
-			return rental.Autos[i];
+			return null_auto;
 		}
 
 	return null_auto;

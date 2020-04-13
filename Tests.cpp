@@ -76,7 +76,7 @@ void TestController()
 
 void TestRepo()
 {
-	cout << "Test Repo\n";
+	cout << "Test Repo";
 	CrudRepository<Auto>* p = new AutoInRepo;
 	vector <Auto> masini;
 	vector <Auto> returnare;
