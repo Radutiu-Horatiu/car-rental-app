@@ -19,7 +19,7 @@ void Main()
 
 	Rental r;
 
-	Kunde k1(1, "client1");
+	Kunde k1(1, "client1"); 
 	Kunde k2(2, "client2");
 	Kunde k3(3, "client3");
 
@@ -76,7 +76,7 @@ void TestController()
 
 void TestRepo()
 {
-	cout << "Test Repo\n";
+	cout << "Test Repo";
 	CrudRepository<Auto>* p = new AutoInRepo;
 	vector <Auto> masini;
 	vector <Auto> returnare;

@@ -14,7 +14,7 @@ Kunde::Kunde()
 	this->id = 0;
 	this->name = "?";
 }
-
+ 
 Kunde::Kunde(int ID, string NAME)
 {
 

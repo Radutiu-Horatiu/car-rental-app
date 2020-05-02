@@ -14,7 +14,7 @@ private:
 public:
 	AutoInRepo repo;
 	AutoController();
-	AutoController(AutoInRepo r);
+	AutoController(AutoInRepo r); 
 	~AutoController();
 
 	Auto findAutoById(int id);

@@ -16,7 +16,7 @@ void Rental::show_orders()
 			Kunden[i].comenzi[j].show_auto();
 		cout << endl;
 	}
-
+	 
 }
 
 void Rental::addClient(Kunde c) {

@@ -19,4 +19,4 @@ public:
 	void deleteAuto(Auto a);
 
 	void show_orders();
-};
+}; 

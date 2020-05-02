@@ -12,7 +12,7 @@ private:
 	string name;
 	
 
-public:
+public: 
 
 	vector <Auto> comenzi;
 
