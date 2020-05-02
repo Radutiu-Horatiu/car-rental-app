@@ -19,6 +19,25 @@ void Rental::show_orders()
 	 
 }
 
+void Rental::reserve_auto(Kunde person, Auto car, int days)
+{
+	Reservierung new_Reservation(person, car, days);
+	this->Reservations.push_back(new_Reservation);
+
+}
+
+Rental::Rental()
+{
+
+}
+
+Rental::Rental(vector<Kunde>& Kunden, vector<Auto>& Autos, vector<Reservierung>& Reservations)
+{
+	this->Kunden = Kunden;
+	this->Autos = Autos;
+	this->Reservations = Reservations;
+}
+
 void Rental::addClient(Kunde c) {
 	if (Kunden.size() == 0) {
 		Kunden.push_back(c);
