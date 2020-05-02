@@ -48,34 +48,34 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Auto.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Rental.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Kunde.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LKW.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PKW.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Tests.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AutoRepository.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CrudRepo.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AutoController.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoRepository.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Console.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CrudRepo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Kunde.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LKW.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PKW.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rental.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

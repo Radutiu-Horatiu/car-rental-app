@@ -25,6 +25,23 @@ vector <Auto> AutoController::findAll()
 	return repo.findAll();
 }
 
+void AutoController::sort_autos()
+{
+	bool sch = true;
+	while (sch)
+	{
+		sch = false;
+		for (int i = 0; i < size(repo.rental.Autos)-1; i++) {
+			if (repo.rental.Autos.at(i).get_Marke().compare(repo.rental.Autos.at(i + 1).get_Marke()) < 0) {
+				Auto aux = repo.rental.Autos.at(i);
+				repo.rental.Autos.at(i) = repo.rental.Autos.at(i + 1);
+				repo.rental.Autos.at(i + 1) = aux;
+				sch = true;
+			}
+		}
+	}
+}
+
 Kunde AutoController::saveAuto(Auto car, Kunde client)
 {
 	Kunde client_fals;

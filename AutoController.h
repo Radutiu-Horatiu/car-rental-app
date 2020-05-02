@@ -19,6 +19,9 @@ public:
 
 	Auto findAutoById(int id);
 	vector <Auto> findAll();
+
+	void sort_autos();
+
 	Kunde saveAuto(Auto car, Kunde client);
 	Kunde updateAuto(Auto car1, Auto car2, Kunde& client);
 	Kunde deleteAuto(Auto car, Kunde& client);
