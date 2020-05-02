@@ -155,6 +155,7 @@
     <ClCompile Include="PKW.cpp" />
     <ClCompile Include="Rental.cpp" />
     <ClCompile Include="AutoRepository.cpp" />
+    <ClCompile Include="Reservierung.cpp" />
     <ClCompile Include="Seminar3OOP.cpp" />
     <ClCompile Include="Tests.cpp" />
   </ItemGroup>
@@ -168,6 +169,7 @@
     <ClInclude Include="PKW.h" />
     <ClInclude Include="Rental.h" />
     <ClInclude Include="CrudRepo.h" />
+    <ClInclude Include="Reservierung.h" />
     <ClInclude Include="Tests.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

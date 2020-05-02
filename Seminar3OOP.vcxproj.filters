@@ -45,6 +45,9 @@
     <ClCompile Include="Console.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Reservierung.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Auto.h">
@@ -76,6 +79,9 @@
     </ClInclude>
     <ClInclude Include="Console.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Reservierung.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
